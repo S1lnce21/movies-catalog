@@ -1,0 +1,209 @@
+{
+    "info": {
+        "_postman_id": "97776d47-5b62-4c85-80c7-ca143923dcbd",
+        "name": "Movies collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://localhost:4000/titles/1/episodes",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4000/titles/1/episodes",
+                    "path": [
+                        "titles",
+                        "1",
+                        "episodes"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"season\": 1,\r\n  \"episode\": 1\r\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/titles/4/episodes",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4000/titles/4/episodes",
+                    "path": [
+                        "titles",
+                        "4",
+                        "episodes"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"season\": 1,\r\n  \"episode\": 1\r\n}"
+                }
+            }
+        },
+        {
+            "name": "GET http://localhost:4000/titles/4/episodes",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4000/titles/1/episodes",
+                    "path": [
+                        "titles",
+                        "1",
+                        "episodes"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/titles/9",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:4000/titles/9",
+                    "path": [
+                        "titles",
+                        "9"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/titles",
+            "request": {
+                "method": "PATCH",
+                "url": {
+                    "raw": "http://localhost:4000/titles/9",
+                    "path": [
+                        "titles",
+                        "9"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"rating\": 9.0\r\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/titles",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4000/titles/abc",
+                    "path": [
+                        "titles",
+                        "abc"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/titles",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4000/titles/abc",
+                    "path": [
+                        "titles",
+                        "abc"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/genres",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4000/genres",
+                    "path": [
+                        "genres"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n  \"name\": \"Драма\"\r\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:4000/genres",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4000/genres",
+                    "path": [
+                        "genres"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        }
+    ]
+}
