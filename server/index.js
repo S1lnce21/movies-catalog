@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const episodesRouter = require('./routes/episodes');
 const titlesRouter = require('./routes/titles');
 require('dotenv').config();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 
 app.use('/genres', genresRouter);
 app.use('/titles', titlesRouter);
+app.use('/titles/:id/episodes', episodesRouter);
 
 app.get('/', (req, res) => {
   res.json({ status: 'ok' });
